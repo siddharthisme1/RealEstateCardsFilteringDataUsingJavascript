@@ -1,0 +1,197 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.15);
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+  color: #DAA520;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #666;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #DAA520;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b8860b;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: #DAA520;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #f0a440;
+  /* width: 400px; */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 15px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.row {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ 
+}
+/* .row.location-status {
+  padding: 58px;
+}
+
+.row.price-project{
+
+  padding: 58px;
+} */
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #DAA520;
+}
+
+.location, .status, .price, .project-type {
+  font-size: 15px;
+  color: #666;
+}
+
+.vertical-divider {
+  height: 30px;
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+.card .location,
+.card .status,
+.card .project-type,
+.card .price {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container .btn {
+  flex: 1;
+  margin: 0 5px;
+  background-color: #DAA520;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+  background-color: #b8860b;
+}
+
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #b8860b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
